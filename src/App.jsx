@@ -1,39 +1,29 @@
 import { useState } from "react";
-import { games } from "./data/mockData";
+import { games as mockGames } from "./data/mockData";
 import GameList from "./components/GameList";
+import Filters from "./components/Filters";
+import "./App.css";
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState("tutti");
+  const [filters, setFilters] = useState({
+    genre: "Tutti",
+    platform: "Tutti",
+    minRating: 1,
+    onlyWishlist: false,
+  });
 
-  const filteredGames =
-    activeTab === "tutti"
-      ? games
-      : games.filter((g) => g.status === activeTab);
+
+  const filteredGames = mockGames.filter((g) => {
+    if (filters.genre !== "Tutti" && g.genre !== filters.genre) return false;
+    if (filters.platform !== "Tutti" && g.platform !== filters.platform) return false;
+    if (filters.onlyWishlist && g.status !== "wishlist") return false;
+    if (g.rating < filters.minRating) return false;
+    return true;
+  });
 
   return (
-    <div style={{ background: "#0d0d0d", minHeight: "100vh", padding: "20px" }}>
-      <header style={{ marginBottom: "20px", textAlign: "center" }}>
-        <h1 style={{ color: "dodgerblue" }}>🎮 GameHub</h1>
-        <p style={{ color: "#aaa" }}>Totale giochi: {games.length}</p>
-      </header>
-      <nav style={{ display: "flex", gap: "10px", justifyContent: "center", marginBottom: "20px" }}>
-        {["tutti", "completato", "in-corso", "wishlist", "abbandonato"].map((tab) => (
-          <button
-            key={tab}
-            onClick={() => setActiveTab(tab)}
-            style={{
-              padding: "8px 12px",
-              borderRadius: "6px",
-              border: "none",
-              cursor: "pointer",
-              background: activeTab === tab ? "dodgerblue" : "#333",
-              color: "#fff",
-            }}
-          >
-            {tab}
-          </button>
-        ))}
-      </nav>
+    <div>
+      <Filters games={mockGames} filters={filters} setFilters={setFilters} />
       <GameList games={filteredGames} />
     </div>
   );
