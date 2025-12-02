@@ -2,6 +2,7 @@ import { useState } from "react";
 import { games as mockGames } from "./data/mockData";
 import GameList from "./components/GameList";
 import Filters from "./components/Filters";
+import Header from "./components/Header";
 import "./App.css";
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
     <div>
       <Filters games={mockGames} filters={filters} setFilters={setFilters} />
       <GameList games={filteredGames} />
+       <Header total={filteredGames.length} />
     </div>
   );
 }
