@@ -10,7 +10,7 @@ export const games = [
     status: "completato",
     hoursPlayed: 120,
     difficulty: "Alta",
-    cover: "https://images.igdbcdn.com/elden-ring.jpg"
+    cover: "https://steamcdn-a.akamaihd.net/steam/apps/1245620/library_600x900_2x.jpg"
   },
   {
     id: "game2",
@@ -23,7 +23,7 @@ export const games = [
     status: "in-corso",
     hoursPlayed: 45,
     difficulty: "Media",
-    cover: "https://images.igdbcdn.com/totk.jpg"
+    cover: "https://static0.polygonimages.com/wordpress/wp-content/uploads/sharedimages/2025/02/zelda-tears-of-the-kingdom-cover.jpg?w=600&h=900&fit=crop"
   },
   {
     id: "game3",
@@ -36,7 +36,7 @@ export const games = [
     status: "completato",
     hoursPlayed: 60,
     difficulty: "Media",
-    cover: "https://images.igdbcdn.com/hades.jpg"
+    cover: "https://steamcdn-a.akamaihd.net/steam/apps/1145360/library_600x900_2x.jpg"
   },
   {
     id: "game4",
@@ -49,33 +49,33 @@ export const games = [
     status: "in-corso",
     hoursPlayed: 80,
     difficulty: "Alta",
-    cover: "https://images.igdbcdn.com/bg3.jpg"
+    cover: "https://steamcdn-a.akamaihd.net/steam/apps/1086940/library_600x900_2x.jpg"
   },
   {
     id: "game5",
-    title: "God of War Ragnarök",
-    genre: "Action Adventure",
-    platform: "PS5",
-    price: "79.99€",
-    year: 2022,
-    rating: 9.2,
+    title: "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+    genre: "FPS Survival",
+    platform: "PC",
+    price: "69.99€",
+    year: 2024,
+    rating: 8.9,
     status: "wishlist",
     hoursPlayed: 0,
-    difficulty: "Media",
-    cover: "https://images.igdbcdn.com/gowr.jpg"
+    difficulty: "Alta",
+    cover: "https://steamcdn-a.akamaihd.net/steam/apps/1643320/library_600x900_2x.jpg"
   },
   {
     id: "game6",
-    title: "Spider-Man 2",
-    genre: "Action",
-    platform: "PS5",
-    price: "79.99€",
-    year: 2023,
-    rating: 8.8,
-    status: "abbandonato",
-    hoursPlayed: 12,
-    difficulty: "Bassa",
-    cover: "https://images.igdbcdn.com/spiderman2.jpg"
+    title: "Clair Obscur: Expedition 33",
+    genre: "JRPG",
+    platform: "PC",
+    price: "59.99€",
+    year: 2025,
+    rating: 9.1,
+    status: "wishlist",
+    hoursPlayed: 0,
+    difficulty: "Media",
+    cover: "https://steamcdn-a.akamaihd.net/steam/apps/1903340/library_600x900_2x.jpg"
   },
   {
     id: "game7",
@@ -88,20 +88,20 @@ export const games = [
     status: "in-corso",
     hoursPlayed: 35,
     difficulty: "Media",
-    cover: "https://images.igdbcdn.com/cp2077.jpg"
+    cover: "https://steamcdn-a.akamaihd.net/steam/apps/1091500/library_600x900_2x.jpg"
   },
   {
     id: "game8",
-    title: "Stardew Valley",
-    genre: "Simulation",
+    title: "Cocoon",
+    genre: "Puzzle Adventure",
     platform: "PC",
-    price: "14.99€",
-    year: 2016,
-    rating: 8.9,
+    price: "24.99€",
+    year: 2023,
+    rating: 8.8,
     status: "completato",
-    hoursPlayed: 200,
-    difficulty: "Bassa",
-    cover: "https://images.igdbcdn.com/stardew.jpg"
+    hoursPlayed: 15,
+    difficulty: "Media",
+    cover: "https://steamcdn-a.akamaihd.net/steam/apps/1497440/library_600x900_2x.jpg"
   },
   {
     id: "game9",
@@ -114,6 +114,20 @@ export const games = [
     status: "wishlist",
     hoursPlayed: 0,
     difficulty: "Media",
-    cover: "https://images.igdbcdn.com/seaofstars.jpg"
+    cover: "https://steamcdn-a.akamaihd.net/steam/apps/1244090/library_600x900_2x.jpg"
+  },
+  {
+    id: "game10",
+    title: "Pokémon Legends: Z-A",
+    genre: "Action RPG",
+    platform: "Switch 2",
+    price: "69.99€",
+    year: 2025,
+    rating: 7.5,
+    status: "abbandonato",
+    hoursPlayed: 5,
+    difficulty: "Facile",
+    cover: "https://static0.polygonimages.com/wordpress/wp-content/uploads/sharedimages/2025/08/pokemon-z-a-cover-art-1.jpg"
   }
+
 ];

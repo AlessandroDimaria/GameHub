@@ -1,0 +1,44 @@
+.game-card {
+  background: #1a1a1a;
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  min-height: 420px;
+}
+
+.game-card img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-bottom: 1px solid #333;
+}
+
+.game-info {
+  padding: 10px;
+  flex: 1 1 auto;
+}
+
+.genre {
+  margin: 4px 0;
+  color: #bbb;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  margin-top: 6px;
+}
+
+.game-details {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  max-height: 120px; 
+  overflow-y: auto;  
+}
