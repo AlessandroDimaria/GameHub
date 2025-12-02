@@ -6,14 +6,7 @@ export default function GameList({ games }) {
   }
 
   return (
-    <div
-      className="game-list"
-      style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-        gap: "20px",
-      }}
-    >
+    <div className="game-list">
       {games.map((g) => (
         <GameCard key={g.id} game={g} />
       ))}
